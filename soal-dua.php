@@ -51,7 +51,7 @@ echo "<h3> SOAL NO 2 </h3>";
 
     echo "<h3> SOAL NO 3 </h3>";
 
-    $trainer = array(
+    $trainer = array( 
         array(
             "Name" => "Will Byers",
             "Age" => 12,

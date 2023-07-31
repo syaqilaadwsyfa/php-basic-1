@@ -11,18 +11,14 @@
     <?php   
     echo "<h3> Soal No 1</h3>";
 
-        $string = "Hello PHP!";
-        echo "Panjang String: ". strlen($string);
-        echo ", ";
-        echo "jumlah kata: " . str_word_count($string);
-        echo " ";
-        echo "Dari Kata " . $string . "<br>";
-        $string = "I'm ready for the challenges";
-        echo "Panjang String: ". strlen($string);
-        echo ", ";
-        echo "jumlah kata: " . str_word_count($string); 
-        echo " ";
-        echo "Dari Kata " . $string . "<br>";
+        $first_sentence = "Hello PHP!";
+        echo "Panjang String: ". strlen($first_sentence);
+        echo ", jumlah kata: " . str_word_count($first_sentence);
+        echo "<b> Dari Kata " . $first_sentence . "</b><br>";
+        $second_sentence = "I'm ready for the challenges";
+        echo "Panjang String: ". strlen($second_sentence);
+        echo ", jumlah kata: " . str_word_count($second_sentence); 
+        echo "<b> Dari Kata " . $second_sentence . "</b><br>";
         
 
 
@@ -37,9 +33,13 @@
 
     echo "<h3> Soal No 3</h3>";
 
-        $string3 = "PHP is old but Good!" ;
-        $string4 = "is old but awesome";
-        $string5 = substr_replace($string3,$string4, 4);
-        echo "String : " . $string3 . "<br>";
-        echo $string5;
+        // $string3 = "PHP is old but Good!" ;
+        // $string4 = "is old but awesome";
+        // $string5 = substr_replace($string3,$string4, 4);
+        // echo "String : " . $string3 . "<br>";
+        // echo $string5;
+
+        $string3 = "PHP is old but Good!";
+        echo "String: \"$string3\" <br>";
+        echo str_replace("Good!", "awesome", $string3);
     ?>
